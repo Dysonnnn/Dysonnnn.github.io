@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>美化我的Hexo</title>
+      <link href="/2018/05/22/%E7%BE%8E%E5%8C%96%E6%88%91%E7%9A%84Hexo/"/>
+      <url>/2018/05/22/%E7%BE%8E%E5%8C%96%E6%88%91%E7%9A%84Hexo/</url>
+      <content type="html"><![CDATA[<pre><code>美化我的Hexo</code></pre><p>参考教程：<br><a href="https://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">https://blog.csdn.net/Hoshea_chx/article/details/78826689</a></p><pre><code>1 . 在站点根目录输入  （下载主题）</code></pre><p>#原博客的主题版本是旧的，新的这样下载<br>$ cd hexo<br>$git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a> themes/next</p><p>#会发现在hexo/theme目录下多了个next的文件夹（我站点在hexo文件夹内）</p> <a id="more"></a> <pre><code>2 . 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next</code></pre><p>效果：  theme：next</p><p>#注意，：后面要留一个空格</p><pre><code>3 . 在终端输入</code></pre><p>hexo clean  </p><p>#清除缓存  ，这样会把/hexo/public 文件夹删除</p><p>hexo g  </p><p>#重新生成代码</p><p>hexo s  -p 5000</p><p>#部署到本地，指定端口，因为我的4000端口用不了，所以我就改了下。执行完之后就可以在浏览器输入地址 localhost:5000 看到效果图了</p><p>hexo d</p><p>#推到github</p><p>然后就可以在 yourname.github.io 看到效果了</p><pre><code>4 . 配置next</code></pre><p>nexT主题有三种选择：<br>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新</p><p>在 站点根目录/themes/next/_congig.yml 文件中修改，搜索关键词schemes：</p><p>scheme: Pisces</p><p>改成这样的效果，然后执行hexo clean ,hexo g,hexo s -p 5000进行预览，在浏览器输入地址 localhost:5000进行预览，没问题的话就可以执行 hexo d 推到github了。</p><pre><code>5 . 拓展博客页面设置</code></pre><p>接下来的教程参考：9%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA+%E4%B8%AA%E4%BA%BA%E5%AE%9A%E5%88%B6/</p><p>编辑配置文件，在站点根目录文件夹/_config.yml</p><p>#建议使用Notepad++ 或 Sublime Text 之类的文本编辑器进行编辑。</p><p>添加以下内容：</p><h1 id="Extensions-以下为第三方插件设置"><a href="#Extensions-以下为第三方插件设置" class="headerlink" title="Extensions # 以下为第三方插件设置"></a>Extensions # 以下为第三方插件设置</h1><p>#插件安装：<br>命令<br>$ npm install –save hexo-generator-search<br>$ npm install –save hexo-blogroll</p><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></h2><p>theme: next # 使用的主题，主题配置后面讲<br>search: # 本地搜索插件<br>  path: search.xml<br>  field: post<br>  format: html<br>  limit: 10000<br>feed: # RSS订阅插件<br>  type: atom<br>  path: atom.xml<br>  limit: 0</p><pre><code>接着设置next主题配置</code></pre><p>修改了next的主题设置不用执行hexo clean，直接hexo g 就可以生效了<br>官方链接;<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/faqs.html</a></p><pre><code>如何设置「阅读全文」？</code></pre><p>在首页显示一篇文章的部分内容，并提供一个链接跳转到全文页面是一个常见的需求。 NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 阅读全文 按钮，可以通过以下方法：</p><p>在文章中使用 <!-- more --> 手动进行截断，Hexo 提供的方式 推荐<br>在文章的 front-matter 中添加 description，并提供文章摘录<br>自动形成摘要，在 主题配置文件 中添加：</p><p>auto_excerpt:<br>  enable: true<br>  length: 150<br>默认截取的长度为 150 字符，可以根据需要自行设定</p><p>建议使用 <!-- more -->（即第一种方式），除了可以精确控制需要显示的摘录内容以外， 这种方式也可以让 Hexo 中的插件更好的识别。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo搭建记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>终于可以发布新的文章了</title>
+      <link href="/2018/05/22/%E7%BB%88%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%8F%91%E5%B8%83%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0%E4%BA%86/"/>
+      <url>/2018/05/22/%E7%BB%88%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%8F%91%E5%B8%83%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>这是正式的第一篇我写的博客</p><p>从一开始，5月18号 22：37听网友说可以在gitbub博客页面折腾Hexo，弄了几天，终于把Hexo博客搭建好了。</p><a id="more"></a> <p>不知道是什么问题，但是最后用windows10的powershell搭建好了hexo,并且成功打开了Hexo页面，真好啊~</p><p>昨天因为不小心手动输入时间的时候把时间输入出错，导致出现了错误，github一直发送报错邮件给我，真的崩溃。。报错内容如下：</p><p>###<br>The page build failed for the <code>master</code> branch with the following error:</p><p>The value ‘“2018-15-21 18:15:54”‘ was passed to a date-related filter that expects valid dates in <code>/_layouts/default.html</code> or one of its layouts. For more information, see <a href="https://help.github.com/articles/page-build-failed-date-is-not-a-valid-datetime/" target="_blank" rel="noopener">https://help.github.com/articles/page-build-failed-date-is-not-a-valid-datetime/</a>.</p><p>For information on troubleshooting Jekyll see:</p><p>  <a href="https://help.github.com/articles/troubleshooting-jekyll-builds" target="_blank" rel="noopener">https://help.github.com/articles/troubleshooting-jekyll-builds</a></p><p>If you have any questions you can contact us by replying to this email.</p><p>###</p><p>最后的解决方法是把有出错的那篇文章在/hexo/source/_posts删除，然后执行 hexo clean命令将之前的/hexo/public删掉，重新生成页面hexo g和发布hexo d，终于看到新的文章在我的github博客页面出现了，开心~</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo搭建记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>note_one</title>
+      <link href="/2018/05/22/note-one/"/>
+      <url>/2018/05/22/note-one/</url>
+      <content type="html"><![CDATA[<p>hello everyone.<br>I just make a new blog for test.</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>test blog</title>
+      <link href="/2018/05/21/test-blog/"/>
+      <url>/2018/05/21/test-blog/</url>
+      <content type="html"><![CDATA[<p>test test test</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/05/21/hello-world/"/>
+      <url>/2018/05/21/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+  
+  
+</search>
