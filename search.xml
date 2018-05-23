@@ -10,14 +10,18 @@
       
       <categories>
           
-          <category> Diary </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Hexo技巧 </tag>
+            <tag> 技巧 </tag>
+            
+            <tag> 标签 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -31,14 +35,20 @@
       
       <categories>
           
-          <category> Diary </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Hexo技巧 </tag>
+            <tag> 技巧 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 美化 </tag>
+            
+            <tag> nexT主题 </tag>
             
         </tags>
       
@@ -50,10 +60,18 @@
       <url>/2018/05/22/%E7%BB%88%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%8F%91%E5%B8%83%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0%E4%BA%86/</url>
       <content type="html"><![CDATA[<p>  这是正式的第一篇我写的博客<br>  从一开始，5月18号 22：37听网友说可以在gitbub博客页面折腾Hexo，弄了几天，终于把Hexo博客搭建好了。</p><a id="more"></a> <p>  不知道是什么问题，但是最后用windows10的powershell搭建好了hexo,并且成功打开了Hexo页面，真好啊~<br>  昨天因为不小心手动输入时间的时候把时间输入出错，导致出现了错误，github一直发送报错邮件给我，真的崩溃。。报错内容如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">The page build failed for the `master` branch with the following error:</span><br><span class="line"></span><br><span class="line">The value &apos;&quot;2018-15-21 18:15:54&quot;&apos; was passed to a date-related filter that expects valid dates in `/_layouts/default.html` or one of its layouts. For more information, see https://help.github.com/articles/page-build-failed-date-is-not-a-valid-datetime/.</span><br><span class="line"></span><br><span class="line">For information on troubleshooting Jekyll see:</span><br><span class="line"></span><br><span class="line">  https://help.github.com/articles/troubleshooting-jekyll-builds</span><br><span class="line"></span><br><span class="line">If you have any questions you can contact us by replying to this email.</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>最后的解决方法是把有出错的那篇文章在/hexo/source/_posts删除，然后执行 hexo clean命令将之前的/hexo/public删掉，重新生成页面hexo g和发布hexo d，终于看到新的文章在我的github博客页面出现了，开心~</p>]]></content>
       
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> hexo搭建记录 </tag>
+            <tag> hexo </tag>
+            
+            <tag> 搭建记录 </tag>
             
         </tags>
       
@@ -79,6 +97,12 @@
       <link href="/2018/05/21/test-blog/"/>
       <url>/2018/05/21/test-blog/</url>
       <content type="html"><![CDATA[<p>test test test</p>]]></content>
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
       
       
         <tags>
