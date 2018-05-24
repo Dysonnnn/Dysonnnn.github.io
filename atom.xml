@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  <subtitle>欢迎来到我的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-23T05:13:36.673Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Dysonnnn</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo文章写作标签技巧</title>
+    <link href="http://yoursite.com/2018/05/23/Hexo%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C%E6%A0%87%E7%AD%BE%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yoursite.com/2018/05/23/Hexo文章写作标签技巧/</id>
+    <published>2018-05-22T16:46:50.000Z</published>
+    <updated>2018-05-23T05:13:36.673Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="标签插件（Tag-Plugins）"><a href="#标签插件（Tag-Plugins）" class="headerlink" title="标签插件（Tag Plugins）"></a>标签插件（Tag Plugins）</h1><p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p><ul><li>本文只显示格式的效果，实际代码请看文末的原文链接</li><li>修改完文件内容直接保存后，强制刷新页面 ctrl+F5 就可以了<a id="more"></a> <h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2>在文章中插入引言，可包含作者、来源和标题。</li></ul><p>别号： quote</p><blockquote><p>content</p><footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote><h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="没有提供参数，则只输出普通的-blockquote"><a href="#没有提供参数，则只输出普通的-blockquote" class="headerlink" title="没有提供参数，则只输出普通的 blockquote"></a>没有提供参数，则只输出普通的 blockquote</h4><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p></blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p><h4 id="引用书上的句子"><a href="#引用书上的句子" class="headerlink" title="引用书上的句子"></a>引用书上的句子</h4><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><p>David LevithanWide Awake</p><h4 id="引用-Twitter"><a href="#引用-Twitter" class="headerlink" title="引用 Twitter"></a>引用 Twitter</h4><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p><footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p><p>@DevDocstwitter.com/devdocs/status/356095192085962752</p><h4 id="引用网络上的文章"><a href="#引用网络上的文章" class="headerlink" title="引用网络上的文章"></a>引用网络上的文章</h4><blockquote><p>Every interaction is both precious and an opportunity to delight.</p><footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote><p>Every interaction is both precious and an opportunity to delight.</p><p>Seth GodinWelcome to Island Marketing</p><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><h4 id="在文章中插入代码。"><a href="#在文章中插入代码。" class="headerlink" title="在文章中插入代码。"></a>在文章中插入代码。</h4><p>别名： code</p><figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure><h4 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h4><h4 id="普通的代码块"><a href="#普通的代码块" class="headerlink" title="普通的代码块"></a>普通的代码块</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;Hello World!&apos;);</span><br></pre></td></tr></table></figure><p>alert(‘Hello World!’);</p><h4 id="指定语言"><a href="#指定语言" class="headerlink" title="指定语言"></a>指定语言</h4><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure><p>[rectangle setX: 10 y: 10 width: 20 height: 20];</p><h4 id="附加说明"><a href="#附加说明" class="headerlink" title="附加说明"></a>附加说明</h4><figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.map(callback[, thisArg])</span><br></pre></td></tr></table></figure><p>Array.map<br>array.map(callback[, thisArg])</p><h4 id="附加说明和网址"><a href="#附加说明和网址" class="headerlink" title="附加说明和网址"></a>附加说明和网址</h4><figure class="highlight plain"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_.compact([0, 1, false, 2, &apos;&apos;, 3]);</span><br><span class="line">=&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure><p>_.compactUnderscore.js<br>_.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]<br>反引号代码块<br>另一种形式的代码块，不同的是它使用三个反引号来包裹。</p><p><code>[language] [title] [url] [link text] code snippet</code></p><h3 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h3><h4 id="在文章中插入-Pull-quote。"><a href="#在文章中插入-Pull-quote。" class="headerlink" title="在文章中插入 Pull quote。"></a>在文章中插入 Pull quote。</h4><blockquote class="pullquote [class]"><p>content</p></blockquote><h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><h4 id="在文章中嵌入-jsFiddle。"><a href="#在文章中嵌入-jsFiddle。" class="headerlink" title="在文章中嵌入 jsFiddle。"></a>在文章中嵌入 jsFiddle。</h4><iframe scrolling="no" width="[width]" height="[height]" src="//jsfiddle.net/shorttag/embedded/[tabs]/[skin]" frameborder="0" allowfullscreen></iframe><h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><h4 id="在文章中嵌入-Gist。"><a href="#在文章中嵌入-Gist。" class="headerlink" title="在文章中嵌入 Gist。"></a>在文章中嵌入 Gist。</h4><script src="//gist.github.com/gist_id.js?file=[filename]"></script><h3 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h3><h4 id="在文章中插入-iframe。"><a href="#在文章中插入-iframe。" class="headerlink" title="在文章中插入 iframe。"></a>在文章中插入 iframe。</h4><iframe src="url" width="[width]" height="[height]" frameborder="0" allowfullscreen></iframe><h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><h5 id="在文章中插入指定大小的图片。"><a href="#在文章中插入指定大小的图片。" class="headerlink" title="在文章中插入指定大小的图片。"></a>在文章中插入指定大小的图片。</h5><p>#img [class names] /path/to/image [width] [height] [title text [alt text]]<br><img src="/images/avatar.jpg" class="test" width="300" height="300" title="测试图片"></p><h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><h4 id="在文章中插入链接，并自动给外部链接添加-target-”-blank”-属性。"><a href="#在文章中插入链接，并自动给外部链接添加-target-”-blank”-属性。" class="headerlink" title="在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。"></a>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。</h4><a>text url [external] [title]</a><h3 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h3><h4 id="插入-source-文件夹内的代码文件。"><a href="#插入-source-文件夹内的代码文件。" class="headerlink" title="插入 source 文件夹内的代码文件。"></a>插入 source 文件夹内的代码文件。</h4><h3 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h3><h4 id="在文章中插入-Youtube-视频。"><a href="#在文章中插入-Youtube-视频。" class="headerlink" title="在文章中插入 Youtube 视频。"></a>在文章中插入 Youtube 视频。</h4><div class="video-container"><iframe src="//www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe></div><h3 id="Vimeo"><a href="#Vimeo" class="headerlink" title="Vimeo"></a>Vimeo</h3><h4 id="在文章中插入-Vimeo-视频。"><a href="#在文章中插入-Vimeo-视频。" class="headerlink" title="在文章中插入 Vimeo 视频。"></a>在文章中插入 Vimeo 视频。</h4><div class="video-container"><iframe src="//player.vimeo.com/video/video_id" frameborder="0" allowfullscreen></iframe></div><h3 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h3><h4 id="引用其他文章的链接。"><a href="#引用其他文章的链接。" class="headerlink" title="引用其他文章的链接。"></a>引用其他文章的链接。</h4><h3 id="引用资源"><a href="#引用资源" class="headerlink" title="引用资源"></a>引用资源</h3><h4 id="引用文章的资源。"><a href="#引用文章的资源。" class="headerlink" title="引用文章的资源。"></a>引用文章的资源。</h4><h3 id="Raw"><a href="#Raw" class="headerlink" title="Raw"></a>Raw</h3><h4 id="如果您想在文章中插入-Swig-标签，可以尝试使用-Raw-标签，以免发生解析异常。"><a href="#如果您想在文章中插入-Swig-标签，可以尝试使用-Raw-标签，以免发生解析异常。" class="headerlink" title="如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。"></a>如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。</h4>content<ul><li>———————结尾分割线—————— </li></ul><blockquote><p>更多内容请查看 </p><footer><strong>官方文档-标签插件（Tag Plugins）</strong><cite><a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">hexo.io/zh-cn/docs/tag-plugins.html</a></cite></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;标签插件（Tag-Plugins）&quot;&gt;&lt;a href=&quot;#标签插件（Tag-Plugins）&quot; class=&quot;headerlink&quot; title=&quot;标签插件（Tag Plugins）&quot;&gt;&lt;/a&gt;标签插件（Tag Plugins）&lt;/h1&gt;&lt;p&gt;标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本文只显示格式的效果，实际代码请看文末的原文链接&lt;/li&gt;
+&lt;li&gt;修改完文件内容直接保存后，强制刷新页面 ctrl+F5 就可以了
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="标签" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>美化我的Hexo</title>
+    <link href="http://yoursite.com/2018/05/22/%E7%BE%8E%E5%8C%96%E6%88%91%E7%9A%84Hexo/"/>
+    <id>http://yoursite.com/2018/05/22/美化我的Hexo/</id>
+    <published>2018-05-22T08:24:31.000Z</published>
+    <updated>2018-05-23T15:24:31.306Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="美化我的Hexo"><a href="#美化我的Hexo" class="headerlink" title="美化我的Hexo"></a>美化我的Hexo</h2><h6 id="推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果"><a href="#推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果" class="headerlink" title="推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果"></a>推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果</h6><h3 id="一：修改hexo配置文件"><a href="#一：修改hexo配置文件" class="headerlink" title="一：修改hexo配置文件"></a>一：修改hexo配置文件</h3><h4 id="1-在站点根目录输入-（下载主题）"><a href="#1-在站点根目录输入-（下载主题）" class="headerlink" title="1 . 在站点根目录输入  （下载主题）"></a>1 . 在站点根目录输入  （下载主题）</h4><h5 id="原博客的主题版本是旧的，新的下载方式如下："><a href="#原博客的主题版本是旧的，新的下载方式如下：" class="headerlink" title="原博客的主题版本是旧的，新的下载方式如下："></a>原博客的主题版本是旧的，新的下载方式如下：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo</span><br><span class="line">$git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>执行完命令之后会发现在hexo/theme目录下多了个next的文件夹（我站点在hexo文件夹内）</p><a id="more"></a> <h4 id="2-完成后，打开-站点配置文件，-找到-theme-字段，并将其值更改为-next，效果如下："><a href="#2-完成后，打开-站点配置文件，-找到-theme-字段，并将其值更改为-next，效果如下：" class="headerlink" title="2 . 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next，效果如下："></a>2 . 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next，效果如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next # 使用的主题</span><br></pre></td></tr></table></figure><h5 id="注意，：后面要留一个空格"><a href="#注意，：后面要留一个空格" class="headerlink" title="注意，：后面要留一个空格"></a>注意，：后面要留一个空格</h5><h4 id="3-在终端输入"><a href="#3-在终端输入" class="headerlink" title="3 . 在终端输入"></a>3 . 在终端输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   #清除缓存,这样会把/hexo/public 文件夹删除</span><br><span class="line">hexo g  #重新生成代码</span><br><span class="line">hexo s  -p 5000   #指定5000端口</span><br></pre></td></tr></table></figure><p>指定端口部署到本地，因为我的4000端口用不了，所以我就改了下。执行完之后就可以在浏览器输入地址 localhost:5000 看到效果图了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d #将本地配置好的hexo博客推到github</span><br></pre></td></tr></table></figure><br>如果没报错什么的话，就可以在 yourname.github.io 看到博客效果了</p><ul><li>注意：看不到效果变化就使用强制刷新 ctrl+F5</li></ul><blockquote><footer><strong>以上内容主要参考自：</strong><cite><a href="https://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">用Hexo + github搭建自己的博客 --- 再也不用羡慕别人了！</a></cite></footer></blockquote><h4 id="4-配置next"><a href="#4-配置next" class="headerlink" title="4 . 配置next"></a>4 . 配置next</h4><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p><ul><li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li><li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li><li>Pisces - 双栏 Scheme，小家碧玉似的清新</li></ul><p>在 站点根目录/themes/next/_congig.yml 文件中修改，搜索关键词schemes：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces  #去掉注释表示选用该主题</span><br></pre></td></tr></table></figure><p>改成这样的效果，然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g #部署页面</span><br><span class="line">hexo s -p 5000 #启动服务</span><br></pre></td></tr></table></figure><br>进行预览，在浏览器输入地址 localhost:5000进行预览，没问题的话就可以执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d 推到github了。</span><br></pre></td></tr></table></figure></p><blockquote><footer><strong>以上内容主要参考自：</strong><cite><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Hexo主题设定</a></cite></footer></blockquote><h4 id="5-拓展博客页面设置"><a href="#5-拓展博客页面设置" class="headerlink" title="5 . 拓展博客页面设置"></a>5 . 拓展博客页面设置</h4><h5 id="编辑配置文件，在站点根目录文件夹-config-yml，添加以下内容："><a href="#编辑配置文件，在站点根目录文件夹-config-yml，添加以下内容：" class="headerlink" title="编辑配置文件，在站点根目录文件夹/_config.yml，添加以下内容："></a>编辑配置文件，在站点根目录文件夹/_config.yml，添加以下内容：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># Extensions # 以下为第三方插件设置</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next # 使用的主题，主题配置后面讲</span><br><span class="line">search: # 本地搜索插件</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">feed: # RSS订阅插件</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 0</span><br></pre></td></tr></table></figure><ul><li>插件安装：命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-generator-search</span><br><span class="line">$ npm install --save hexo-blogroll</span><br></pre></td></tr></table></figure></li></ul><blockquote><footer><strong>以上内容主要参考自：</strong><cite><a href="https://lemonxq.cn/2017/03/24/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA+%E4%B8%AA%E4%BA%BA%E5%AE%9A%E5%88%B6/" target="_blank" rel="noopener">Hexo静态博客搭建+个人定制</a></cite></footer></blockquote><h4 id="6-next主题配置"><a href="#6-next主题配置" class="headerlink" title="6.next主题配置"></a>6.next主题配置</h4><ul><li>修改了next的主题设置直接执行$hexo g 就可以生效了</li></ul><h5 id="如何设置「阅读全文」？"><a href="#如何设置「阅读全文」？" class="headerlink" title="如何设置「阅读全文」？"></a>如何设置「阅读全文」？</h5><p>在首页显示一篇文章的部分内容，并提供一个链接跳转到全文页面是一个常见的需求。 NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 阅读全文 按钮，可以通过以下方法：</p><pre><code>1.在文章中使用 &lt;!-- more --&gt; 手动进行截断，Hexo 提供的方式 推荐2.在文章的 front-matter 中添加 description，并提供文章摘录3.自动形成摘要，在 主题配置文件 中添加：</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">  enable: true</span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure><p>默认截取的长度为 150 字符，可以根据需要自行设定</p><p>建议使用 <!-- more -->（即第一种方式），除了可以精确控制需要显示的摘录内容以外， 这种方式也可以让 Hexo 中的插件更好的识别。</p><h5 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h5><p>编辑 主题配置文件,修改字段 avatar,值设置成头像的链接地址。其中，头像的链接地址可以是：<br>地址值:<br>完整的互联网 URI    <a href="http://example.com/avatar.png" target="_blank" rel="noopener">http://example.com/avatar.png</a><br>站点内的地址:<br>将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在）<br>配置为：avatar: /uploads/avatar.png<br>或者<br>放置在 source/images/ 目录下<br>配置为：avatar: /images/avatar.png</p><h5 id="友情链接-由-iamwent-贡献"><a href="#友情链接-由-iamwent-贡献" class="headerlink" title="友情链接 由 iamwent 贡献"></a>友情链接 由 iamwent 贡献</h5><p>编辑 主题配置文件 添加：<br>友情链接配置示例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># title</span><br><span class="line">links_title: Links</span><br><span class="line">links:</span><br><span class="line">  MacTalk: http://macshuo.com/</span><br><span class="line">  Title: http://example.com/</span><br></pre></td></tr></table></figure></p><h5 id="开启打赏功能-由-habren-贡献"><a href="#开启打赏功能-由-habren-贡献" class="headerlink" title="开启打赏功能 由 habren 贡献"></a>开启打赏功能 由 habren 贡献</h5><p>越来越多的平台（微信公众平台，新浪微博，简书，百度打赏等）支持打赏功能，付费阅读时代越来越近，特此增加了打赏功能，支持微信打赏和支付宝打赏。 只需要 主题配置文件 中填入 微信 和 支付宝 收款二维码图片地址 即可开启该功能。</p><h5 id="打赏功能配置示例"><a href="#打赏功能配置示例" class="headerlink" title="打赏功能配置示例"></a>打赏功能配置示例</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！</span><br><span class="line">wechatpay: /images/wechat-reward-image.jpg</span><br><span class="line">alipay: /images/alipay-reward-image.jpg</span><br><span class="line">#图片放在博客站根目录/image/录路径下</span><br></pre></td></tr></table></figure><blockquote><footer><strong>更多内容请查看：</strong><cite><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">官方next主题-开始使用</a></cite></footer></blockquote><blockquote><footer><strong>更多内容请查看：</strong><cite><a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">官方next主题-设置文档</a></cite></footer></blockquote><blockquote><footer><strong>更多内容请查看：</strong><cite><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">官方next主题-主题配置</a></cite></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;美化我的Hexo&quot;&gt;&lt;a href=&quot;#美化我的Hexo&quot; class=&quot;headerlink&quot; title=&quot;美化我的Hexo&quot;&gt;&lt;/a&gt;美化我的Hexo&lt;/h2&gt;&lt;h6 id=&quot;推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果&quot;&gt;&lt;a href=&quot;#推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果&quot; class=&quot;headerlink&quot; title=&quot;推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果&quot;&gt;&lt;/a&gt;推荐用HexoEditor文件编辑器来编辑，随时显示文件在Hexo设置下的显示效果&lt;/h6&gt;&lt;h3 id=&quot;一：修改hexo配置文件&quot;&gt;&lt;a href=&quot;#一：修改hexo配置文件&quot; class=&quot;headerlink&quot; title=&quot;一：修改hexo配置文件&quot;&gt;&lt;/a&gt;一：修改hexo配置文件&lt;/h3&gt;&lt;h4 id=&quot;1-在站点根目录输入-（下载主题）&quot;&gt;&lt;a href=&quot;#1-在站点根目录输入-（下载主题）&quot; class=&quot;headerlink&quot; title=&quot;1 . 在站点根目录输入  （下载主题）&quot;&gt;&lt;/a&gt;1 . 在站点根目录输入  （下载主题）&lt;/h4&gt;&lt;h5 id=&quot;原博客的主题版本是旧的，新的下载方式如下：&quot;&gt;&lt;a href=&quot;#原博客的主题版本是旧的，新的下载方式如下：&quot; class=&quot;headerlink&quot; title=&quot;原博客的主题版本是旧的，新的下载方式如下：&quot;&gt;&lt;/a&gt;原博客的主题版本是旧的，新的下载方式如下：&lt;/h5&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ cd hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;执行完命令之后会发现在hexo/theme目录下多了个next的文件夹（我站点在hexo文件夹内）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="美化" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="nexT主题" scheme="http://yoursite.com/tags/nexT%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于可以发布新的文章了</title>
+    <link href="http://yoursite.com/2018/05/22/%E7%BB%88%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%8F%91%E5%B8%83%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0%E4%BA%86/"/>
+    <id>http://yoursite.com/2018/05/22/终于可以发布新的文章了/</id>
+    <published>2018-05-22T08:00:01.000Z</published>
+    <updated>2018-05-23T14:27:02.118Z</updated>
+    
+    <content type="html"><![CDATA[<p>  这是正式的第一篇我写的博客<br>  从一开始，5月18号 22：37听网友说可以在gitbub博客页面折腾Hexo，弄了几天，终于把Hexo博客搭建好了。</p><a id="more"></a> <p>  不知道是什么问题，但是最后用windows10的powershell搭建好了hexo,并且成功打开了Hexo页面，真好啊~<br>  昨天因为不小心手动输入时间的时候把时间输入出错，导致出现了错误，github一直发送报错邮件给我，真的崩溃。。报错内容如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">The page build failed for the `master` branch with the following error:</span><br><span class="line"></span><br><span class="line">The value &apos;&quot;2018-15-21 18:15:54&quot;&apos; was passed to a date-related filter that expects valid dates in `/_layouts/default.html` or one of its layouts. For more information, see https://help.github.com/articles/page-build-failed-date-is-not-a-valid-datetime/.</span><br><span class="line"></span><br><span class="line">For information on troubleshooting Jekyll see:</span><br><span class="line"></span><br><span class="line">  https://help.github.com/articles/troubleshooting-jekyll-builds</span><br><span class="line"></span><br><span class="line">If you have any questions you can contact us by replying to this email.</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>最后的解决方法是把有出错的那篇文章在/hexo/source/_posts删除，然后执行 hexo clean命令将之前的/hexo/public删掉，重新生成页面hexo g和发布hexo d，终于看到新的文章在我的github博客页面出现了，开心~</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  这是正式的第一篇我写的博客&lt;br&gt;  从一开始，5月18号 22：37听网友说可以在gitbub博客页面折腾Hexo，弄了几天，终于把Hexo博客搭建好了。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="搭建记录" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>note_one</title>
+    <link href="http://yoursite.com/2018/05/22/note-one/"/>
+    <id>http://yoursite.com/2018/05/22/note-one/</id>
+    <published>2018-05-22T04:07:59.000Z</published>
+    <updated>2018-05-22T08:18:50.943Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello everyone.<br>I just make a new blog for test.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;hello everyone.&lt;br&gt;I just make a new blog for test.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test blog</title>
+    <link href="http://yoursite.com/2018/05/21/test-blog/"/>
+    <id>http://yoursite.com/2018/05/21/test-blog/</id>
+    <published>2018-05-21T11:31:47.000Z</published>
+    <updated>2018-05-23T05:14:00.781Z</updated>
+    
+    <content type="html"><![CDATA[<p>test test test</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;test test test&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/05/21/hello-world/"/>
+    <id>http://yoursite.com/2018/05/21/hello-world/</id>
+    <published>2018-05-21T09:03:53.543Z</published>
+    <updated>2018-05-21T15:23:56.569Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
