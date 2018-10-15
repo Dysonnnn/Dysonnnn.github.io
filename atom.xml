@@ -83,11 +83,11 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
       <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
       <category term="标签" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE/"/>
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
@@ -116,9 +116,9 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
-    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
       <category term="美化" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%8C%96/"/>
     
