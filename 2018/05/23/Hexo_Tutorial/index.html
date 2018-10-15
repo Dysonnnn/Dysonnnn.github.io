@@ -124,7 +124,7 @@
 <meta property="og:description" content="标签插件（Tag Plugins）标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。  本文只显示格式的效果，实际代码请看文末的原文链接 修改完文件内容直接保存后，强制刷新页面 ctrl+F5 就可以了">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/avatar.jpg">
-<meta property="og:updated_time" content="2018-05-23T05:13:36.673Z">
+<meta property="og:updated_time" content="2018-10-14T03:34:04.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo文章写作标签技巧">
 <meta name="twitter:description" content="标签插件（Tag Plugins）标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。  本文只显示格式的效果，实际代码请看文末的原文链接 修改完文件内容直接保存后，强制刷新页面 ctrl+F5 就可以了">
@@ -152,6 +152,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?042bf14ba697e21ed1f7c66f9bfd2d9c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -192,6 +202,8 @@
 
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+
 
   
   
@@ -443,12 +455,24 @@
                 
               
 
-              <time title="创建时间：2018-05-23 00:46:50 / 修改时间：13:13:36" itemprop="dateCreated datePublished" datetime="2018-05-23T00:46:50+08:00">2018-05-23</time>
+              <time title="创建时间：2018-05-23 00:46:50" itemprop="dateCreated datePublished" datetime="2018-05-23T00:46:50+08:00">2018-05-23</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-14 11:34:04" itemprop="dateModified" datetime="2018-10-14T11:34:04+08:00">2018-10-14</time>
               
             
           </span>
@@ -490,14 +514,6 @@
           
           
 
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon"
-            >
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
           
 
           
@@ -575,6 +591,7 @@ content
 </ul>
 <blockquote><p>更多内容请查看 </p>
 <footer><strong>官方文档-标签插件（Tag Plugins）</strong><cite><a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">hexo.io/zh-cn/docs/tag-plugins.html</a></cite></footer></blockquote>
+
       
     </div>
 
@@ -817,7 +834,9 @@ var jiathis_config={
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -959,24 +978,21 @@ var jiathis_config={
 
 
 
+
+<!-- 
+
 <span id="busuanzi_container_site_uv">
    本站总访问量<span id="busuanzi_value_site_uv"></span>次
 </span>
 
+-->
+
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.1k字</span>
+  <span class="post-count">博客全站共5k字</span>
 </div>
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-
-  
-</div>
-
 
 
 
@@ -1134,6 +1150,30 @@ var jiathis_config={
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hgfIFeEIKMD0D1k6FzAc1X5R-gzGzoHsz',
+        appKey: 'LCMgHTQ01JpL0iqHONVaKsSq',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1569,13 +1609,12 @@ var jiathis_config={
 
 
 
+
 <!-- 下面的是音乐播放器 -->
 <link rel="stylesheet" href="/dist/APlayer.min.css">
 <div id="aplayer"></div>
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 <!-- 上面的是音乐播放器 -->
-
-
 </body>
 </html>

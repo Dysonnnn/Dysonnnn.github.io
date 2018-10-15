@@ -116,7 +116,7 @@
 
 
   <meta name="description" content="欢迎使用 Cmd Markdown 编辑阅读器我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：">
-<meta name="keywords" content="使用手册,Markdown">
+<meta name="keywords" content="Markdown,使用手册">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown_tutorial">
 <meta property="og:url" content="http://yoursite.com/2018/10/13/Markdown-tutorial/index.html">
@@ -157,6 +157,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?042bf14ba697e21ed1f7c66f9bfd2d9c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -196,6 +206,8 @@
 
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+
 
   
   
@@ -477,14 +489,6 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon"
-            >
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
-          
 
           
 
@@ -640,9 +644,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/使用手册/" rel="tag"># 使用手册</a>
-          
             <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+            <a href="/tags/使用手册/" rel="tag"># 使用手册</a>
           
         </div>
       
@@ -824,7 +828,9 @@ var jiathis_config={
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -966,24 +972,21 @@ var jiathis_config={
 
 
 
+
+<!-- 
+
 <span id="busuanzi_container_site_uv">
    本站总访问量<span id="busuanzi_value_site_uv"></span>次
 </span>
 
+-->
+
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.1k字</span>
+  <span class="post-count">博客全站共5k字</span>
 </div>
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-
-  
-</div>
-
 
 
 
@@ -1141,6 +1144,30 @@ var jiathis_config={
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hgfIFeEIKMD0D1k6FzAc1X5R-gzGzoHsz',
+        appKey: 'LCMgHTQ01JpL0iqHONVaKsSq',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1576,13 +1603,12 @@ var jiathis_config={
 
 
 
+
 <!-- 下面的是音乐播放器 -->
 <link rel="stylesheet" href="/dist/APlayer.min.css">
 <div id="aplayer"></div>
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 <!-- 上面的是音乐播放器 -->
-
-
 </body>
 </html>

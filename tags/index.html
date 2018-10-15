@@ -150,6 +150,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?042bf14ba697e21ed1f7c66f9bfd2d9c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -189,6 +199,8 @@
 
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+
 
   
   
@@ -486,10 +498,14 @@
                     
                   
                 
-                目前共计 10 个标签
+                  
+                    
+                  
+                
+                目前共计 11 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #ccc">Markdown</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/nexT主题/" style="font-size: 12px; color: #ccc">nexT主题</a> <a href="/tags/raspberry/" style="font-size: 12px; color: #ccc">raspberry</a> <a href="/tags/使用手册/" style="font-size: 30px; color: #111">使用手册</a> <a href="/tags/技巧/" style="font-size: 30px; color: #111">技巧</a> <a href="/tags/搭建记录/" style="font-size: 12px; color: #ccc">搭建记录</a> <a href="/tags/标签/" style="font-size: 12px; color: #ccc">标签</a> <a href="/tags/美化/" style="font-size: 12px; color: #ccc">美化</a>
+              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #ccc">Markdown</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/nexT主题/" style="font-size: 12px; color: #ccc">nexT主题</a> <a href="/tags/raspberry/" style="font-size: 12px; color: #ccc">raspberry</a> <a href="/tags/使用手册/" style="font-size: 12px; color: #ccc">使用手册</a> <a href="/tags/技巧/" style="font-size: 30px; color: #111">技巧</a> <a href="/tags/搭建记录/" style="font-size: 12px; color: #ccc">搭建记录</a> <a href="/tags/教程/" style="font-size: 12px; color: #ccc">教程</a> <a href="/tags/标签/" style="font-size: 12px; color: #ccc">标签</a> <a href="/tags/美化/" style="font-size: 12px; color: #ccc">美化</a>
             </div>
           </div>
         
@@ -600,7 +616,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -726,24 +744,21 @@
 
 
 
+
+<!-- 
+
 <span id="busuanzi_container_site_uv">
    本站总访问量<span id="busuanzi_value_site_uv"></span>次
 </span>
 
+-->
+
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.1k字</span>
+  <span class="post-count">博客全站共5k字</span>
 </div>
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-
-  
-</div>
-
 
 
 
@@ -901,6 +916,30 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hgfIFeEIKMD0D1k6FzAc1X5R-gzGzoHsz',
+        appKey: 'LCMgHTQ01JpL0iqHONVaKsSq',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1336,13 +1375,12 @@
 
 
 
+
 <!-- 下面的是音乐播放器 -->
 <link rel="stylesheet" href="/dist/APlayer.min.css">
 <div id="aplayer"></div>
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 <!-- 上面的是音乐播放器 -->
-
-
 </body>
 </html>
