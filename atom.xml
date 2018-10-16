@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-13T15:55:27.848Z</updated>
+  <updated>2018-10-16T11:21:22.728Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>更新日志</title>
+    <link href="http://yoursite.com/2018/10/16/Update-record/"/>
+    <id>http://yoursite.com/2018/10/16/Update-record/</id>
+    <published>2018-10-16T06:00:48.000Z</published>
+    <updated>2018-10-16T11:21:22.728Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a><strong>更新日志</strong></h2><h3 id="version-1-1-2018-10-15"><a href="#version-1-1-2018-10-15" class="headerlink" title="version 1.1 (2018-10-15)"></a><strong>version 1.1</strong> (2018-10-15)</h3><ul><li>评论系统  - <em>Valine+Leancloud</em></li><li>显示运行时间  - <em>添加show的js文件</em></li><li>显示博客访客人数  - <em>busuanzi</em></li><li>统计访客人数  - <em>百度统计</em></li><li>网页音乐播放器    - <em>Aplayer</em></li></ul><blockquote><p><strong>以上部分更新，感谢 <a href="https://blacklyh.github.io" target="_blank" rel="noopener">LYH同学</a> 的帮助</strong></p></blockquote><h3 id="version-1-0-2018-06-01"><a href="#version-1-0-2018-06-01" class="headerlink" title="version 1.0 (2018-06-01)"></a><strong>version 1.0</strong> (2018-06-01)</h3><ul><li>赞赏功能  - <em>主题的配置文件内 reward_comment 字段</em></li><li>显示文章访客人数  - <em>配置文件自带</em></li><li>替换背景图片</li><li>动态背景-动态线条  -<em>博客没有安装插件的话就自己加js</em></li><li>文章目录  -<em>配置文件自带</em></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;更新日志&quot;&gt;&lt;a href=&quot;#更新日志&quot; class=&quot;headerlink&quot; title=&quot;更新日志&quot;&gt;&lt;/a&gt;&lt;strong&gt;更新日志&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&quot;version-1-1-2018-10-15&quot;&gt;&lt;a href=&quot;#versio
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown_tutorial</title>
@@ -83,11 +104,11 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
       <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
       <category term="标签" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
@@ -116,9 +137,9 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
       <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
       <category term="美化" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%8C%96/"/>
     
@@ -155,7 +176,7 @@
     <link href="http://yoursite.com/2018/05/21/hello-world/"/>
     <id>http://yoursite.com/2018/05/21/hello-world/</id>
     <published>2018-05-21T09:03:53.543Z</published>
-    <updated>2018-10-15T07:42:01.215Z</updated>
+    <updated>2018-10-16T11:02:39.229Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a> <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     

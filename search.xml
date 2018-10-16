@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>更新日志</title>
+      <link href="/2018/10/16/Update-record/"/>
+      <url>/2018/10/16/Update-record/</url>
+      <content type="html"><![CDATA[<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a><strong>更新日志</strong></h2><h3 id="version-1-1-2018-10-15"><a href="#version-1-1-2018-10-15" class="headerlink" title="version 1.1 (2018-10-15)"></a><strong>version 1.1</strong> (2018-10-15)</h3><ul><li>评论系统  - <em>Valine+Leancloud</em></li><li>显示运行时间  - <em>添加show的js文件</em></li><li>显示博客访客人数  - <em>busuanzi</em></li><li>统计访客人数  - <em>百度统计</em></li><li>网页音乐播放器    - <em>Aplayer</em></li></ul><blockquote><p><strong>以上部分更新，感谢 <a href="https://blacklyh.github.io" target="_blank" rel="noopener">LYH同学</a> 的帮助</strong></p></blockquote><h3 id="version-1-0-2018-06-01"><a href="#version-1-0-2018-06-01" class="headerlink" title="version 1.0 (2018-06-01)"></a><strong>version 1.0</strong> (2018-06-01)</h3><ul><li>赞赏功能  - <em>主题的配置文件内 reward_comment 字段</em></li><li>显示文章访客人数  - <em>配置文件自带</em></li><li>替换背景图片</li><li>动态背景-动态线条  -<em>博客没有安装插件的话就自己加js</em></li><li>文章目录  -<em>配置文件自带</em></li></ul>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Markdown_tutorial</title>
       <link href="/2018/10/13/Markdown-tutorial/"/>
       <url>/2018/10/13/Markdown-tutorial/</url>
@@ -57,11 +66,11 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 技巧 </tag>
             
             <tag> 标签 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -82,9 +91,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 技巧 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> 美化 </tag>
             
