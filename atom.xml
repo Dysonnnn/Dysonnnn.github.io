@@ -5,9 +5,9 @@
   <subtitle>Keep Working, Make Happy</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://dysonnnn.github.io/"/>
   <updated>2018-10-22T11:09:06.529Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://dysonnnn.github.io/</id>
   
   <author>
     <name>Dysonnnn</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>更新日志</title>
-    <link href="http://yoursite.com/2018/10/16/Update-record/"/>
-    <id>http://yoursite.com/2018/10/16/Update-record/</id>
+    <link href="https://dysonnnn.github.io/2018/10/16/Update-record/"/>
+    <id>https://dysonnnn.github.io/2018/10/16/Update-record/</id>
     <published>2018-10-16T06:00:48.000Z</published>
     <updated>2018-10-22T11:09:06.529Z</updated>
     
@@ -39,14 +39,14 @@
     </summary>
     
     
-      <category term="记录" scheme="http://yoursite.com/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="https://dysonnnn.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>Markdown_tutorial</title>
-    <link href="http://yoursite.com/2018/10/13/Markdown-tutorial/"/>
-    <id>http://yoursite.com/2018/10/13/Markdown-tutorial/</id>
+    <link href="https://dysonnnn.github.io/2018/10/13/Markdown-tutorial/"/>
+    <id>https://dysonnnn.github.io/2018/10/13/Markdown-tutorial/</id>
     <published>2018-10-13T15:51:09.000Z</published>
     <updated>2018-10-18T13:53:14.246Z</updated>
     
@@ -58,23 +58,23 @@
     
     </summary>
     
-      <category term="Markdown" scheme="http://yoursite.com/categories/Markdown/"/>
+      <category term="Markdown" scheme="https://dysonnnn.github.io/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://dysonnnn.github.io/tags/Markdown/"/>
     
-      <category term="使用手册" scheme="http://yoursite.com/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+      <category term="使用手册" scheme="https://dysonnnn.github.io/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
     
   </entry>
   
   <entry>
     <title>raspberry_树莓派使用手册</title>
-    <link href="http://yoursite.com/2018/09/12/raspberry_Tutorial/"/>
-    <id>http://yoursite.com/2018/09/12/raspberry_Tutorial/</id>
+    <link href="https://dysonnnn.github.io/2018/09/12/raspberry_Tutorial/"/>
+    <id>https://dysonnnn.github.io/2018/09/12/raspberry_Tutorial/</id>
     <published>2018-09-12T08:00:01.000Z</published>
-    <updated>2018-12-06T12:15:41.458Z</updated>
+    <updated>2018-12-06T12:19:21.351Z</updated>
     
-    <content type="html"><![CDATA[<p>前几天入手了一个树莓派，昨天买的32G大的OV家的TF卡到了，开始学习！</p><hr><a id="more"></a> <h1 id="开启树莓派前的设置"><a href="#开启树莓派前的设置" class="headerlink" title="开启树莓派前的设置"></a>开启树莓派前的设置</h1><h2 id="烧写树莓派系统"><a href="#烧写树莓派系统" class="headerlink" title="烧写树莓派系统"></a>烧写树莓派系统</h2><p>准备材料</p><ul><li>TF卡（大于8G，越大越好啦）&amp;TF卡的读卡器</li><li>win32diskimager.exe  – windows平台下的镜像烧写软件</li><li>系统镜像 (在这  <a href="http://shumeipai.nxez.com/download#os" target="_blank" rel="noopener">http://shumeipai.nxez.com/download#os</a> 选择一个进行下载，我下载的是 Raspbian 默认帐号：Username: pi Password: raspberry )<br>接下来打开软件win32diskimager.exe：<br>系统文件选择    系统镜像（要求路径无中文）<br>磁盘选择        TF卡<br>等待烧写完成。</li></ul><h2 id="无屏幕和键盘配置树莓派WiFi和SSH"><a href="#无屏幕和键盘配置树莓派WiFi和SSH" class="headerlink" title="无屏幕和键盘配置树莓派WiFi和SSH"></a><a href="http://shumeipai.nxez.com/2017/09/13/raspberry-pi-network-configuration-before-boot.html" target="_blank" rel="noopener">无屏幕和键盘配置树莓派WiFi和SSH</a></h2><blockquote><p>根据如上文章，可以在无屏幕的情况下开启ssh并且连接到树莓派的终端。</p></blockquote><p><strong>精华部分：</strong><br>在TF卡根目录下建立 wpa_supplicant.conf 文件 和ssh文件（新建一个文本文件然后更名为ssh，删除后缀，文件内容为空）。</p><p>wpa_supplicant.conf文件内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">country=CN</span><br><span class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</span><br><span class="line">update_config=1</span><br><span class="line"> </span><br><span class="line">network=&#123;</span><br><span class="line">ssid=&quot;WiFi-A&quot;      #wifi名字</span><br><span class="line">psk=&quot;12345678&quot;     #wifi密码</span><br><span class="line">key_mgmt=WPA-PSK   #加密协议</span><br><span class="line">priority=1         #wifi优先级，数字越小越先连接</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="进行ssh连接"><a href="#进行ssh连接" class="headerlink" title="进行ssh连接"></a><strong>进行ssh连接</strong></h3><p>配置好wifi和ssh之后，TF卡插到树莓派，然后上电，进行ssh连接</p><ul><li><p><strong>提示</strong></p><blockquote><p>插入电源，红灯亮，绿灯闪烁为正常状态。<br>其中红灯为电源指示灯，常亮即表示正常供电，绿灯为数据灯，闪烁则为有数据读取。</p></blockquote></li><li><p>Raspbian的ssh默认登陆用户名：pi，密码：raspberry。</p></li></ul><p>windows10好像是自带ssh连接的，命令为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh pi@ip地址</span><br><span class="line">#然后输入密码</span><br></pre></td></tr></table></figure></p><p>或者使用putty进行ssh连接</p><p><a href="http://shumeipai.nxez.com/2013/09/07/using-putty-to-log-in-to-the-raspberry-pie.html" target="_blank" rel="noopener">点击打开PuTTY使用方法</a></p><hr><h1 id="进阶设置"><a href="#进阶设置" class="headerlink" title="进阶设置"></a>进阶设置</h1><h2 id="修改默认的-Pi-账号"><a href="#修改默认的-Pi-账号" class="headerlink" title="修改默认的 Pi 账号"></a><a href="http://shumeipai.nxez.com/2013/08/27/pi-modify-the-default-account.html" target="_blank" rel="noopener">修改默认的 Pi 账号</a></h2><blockquote><p>树莓派默认的登录帐号是Pi，为了安全和使用习惯的统一，修改这个默认的 Pi 账号步骤如下：<br>首先，需要启用 root 账号。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd **  # 输入新密码</span><br></pre></td></tr></table></figure><h2 id="配置树莓派显示器"><a href="#配置树莓派显示器" class="headerlink" title="配置树莓派显示器"></a>配置树莓派显示器</h2><blockquote><p>用HDMI转VGA方式连接显示器—当直接用HDMI连接显示屏不能正常显示的时候可以做以下操作</p></blockquote><p>方法：修改SD卡的boot分区的config.txt 文件</p><p>首先备份config.txt文件，然后使用编辑器打开，这里不推荐记事本，可以使用 VIM 或者 notepad++ 打开。然后加入以下几个选项：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hdmi_force_hotplug=1</span><br><span class="line">config_hdmi_boost=4</span><br><span class="line">hdmi_group=2</span><br><span class="line">hdmi_mode=47</span><br><span class="line">hdmi_drive=2</span><br><span class="line">hdmi_ignore_edid=0xa5000080</span><br><span class="line">disable_overscan=1      </span><br></pre></td></tr></table></figure><p>这里我的显示器分辨率是1440x900，所以修改为hdmi_mode=37，如果你的显示器分辨率不同，请查找需要修改的值。</p><ul><li>转载自 <a href="http://blog.lxx1.com/" target="_blank" rel="noopener">科技爱好者博客</a></li><li>原文链接地址: <a href="http://blog.lxx1.com/1706" target="_blank" rel="noopener">解决树莓派使用HDMI-VGA转换器黑屏的方案</a></li></ul><h2 id="修改SWAP空间大小"><a href="#修改SWAP空间大小" class="headerlink" title="修改SWAP空间大小"></a>修改SWAP空间大小</h2><p>修改 /etc/dphys-swapfile文件的CONF_SWAPSIZE值<br>重启  sudo reboot<br>–参考自 <a href="http://shumeipai.nxez.com/2013/08/25/config-swap-size.html" target="_blank" rel="noopener">http://shumeipai.nxez.com/2013/08/25/config-swap-size.html</a> 的评论</p><h2 id="修改更新源–加快软件更新速度"><a href="#修改更新源–加快软件更新速度" class="headerlink" title="修改更新源–加快软件更新速度"></a>修改更新源–加快软件更新速度</h2><p><strong>需要修改的文件是：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/apt/sources.list</span><br><span class="line">/etc/apt/sources.d/raspi.list</span><br></pre></td></tr></table></figure></p><p><strong>中国镜像源地址：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#中国科学技术大学</span><br><span class="line">Raspbian http://mirrors.ustc.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#阿里云</span><br><span class="line">Raspbian http://mirrors.aliyun.com/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#清华大学</span><br><span class="line">Raspbian http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#华中科技大学</span><br><span class="line">Raspbian http://mirrors.hustunique.com/raspbian/raspbian/</span><br><span class="line">Arch Linux ARM http://mirrors.hustunique.com/archlinuxarm/</span><br><span class="line"></span><br><span class="line">#华南农业大学（华南用户）</span><br><span class="line">Raspbian http://mirrors.scau.edu.cn/raspbian/</span><br><span class="line"></span><br><span class="line">#大连东软信息学院源（北方用户）</span><br><span class="line">Raspbian http://mirrors.neusoft.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#重庆大学源（中西部用户）</span><br><span class="line">Raspbian http://mirrors.cqu.edu.cn/Raspbian/raspbian/</span><br></pre></td></tr></table></figure></p><p><strong>修改之前建议先备份一下原来的文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp 原来的文件  原来的文件_backup</span><br></pre></td></tr></table></figure></p><h2 id="调节音量"><a href="#调节音量" class="headerlink" title="调节音量"></a>调节音量</h2><p>命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alsamixer</span><br></pre></td></tr></table></figure></p><p>输入命令后跳转到图形界面，按上下键控制音量,按ctrl+c退出控制界面。</p><h2 id="树莓派的系统设置界面"><a href="#树莓派的系统设置界面" class="headerlink" title="树莓派的系统设置界面"></a>树莓派的系统设置界面</h2><p>输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure></p><p>选择 Interfacing Options<br>可以设置以下开关状态</p><blockquote><p>camera<br>ssh<br>VNC  #开启VNC之后可以使用VNC显示树莓派图形界面<br>SPI<br>Serial<br>l-write<br>remote GPIO</p></blockquote><hr><h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h2 id="在树莓派上搭建代码托管服务-SVN"><a href="#在树莓派上搭建代码托管服务-SVN" class="headerlink" title="在树莓派上搭建代码托管服务(SVN)"></a><a href="http://shumeipai.nxez.com/2013/08/27/building-svn-come-in-raspberry.html" target="_blank" rel="noopener">在树莓派上搭建代码托管服务(SVN)</a></h2><p> 首先需要安装Subversion软件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   sudo apt-get install subversion</span><br><span class="line">#未完待续</span><br></pre></td></tr></table></figure></p><h2 id="基于-Samba-实现-NAS-系统"><a href="#基于-Samba-实现-NAS-系统" class="headerlink" title="基于 Samba 实现 NAS 系统"></a><a href="http://shumeipai.nxez.com/2013/08/24/install-nas-on-raspberrypi.html" target="_blank" rel="noopener">基于 Samba 实现 NAS 系统</a></h2><p>安装好samba软件就可以在windows添加网络位置<br>例如 \192.168.1.111\share<br>就可以在windows访问树莓派的文件啦</p><hr><h1 id="更多有趣网站："><a href="#更多有趣网站：" class="headerlink" title="更多有趣网站："></a><strong>更多有趣网站：</strong></h1><blockquote><p><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a><br><a href="http://wiki.nxez.com/" target="_blank" rel="noopener">创客百科</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>前几天入手了一个树莓派，昨天买的32G大的OV家的TF卡到了，开始学习！</p><hr><a id="more"></a> <h1 id="开启树莓派前的设置"><a href="#开启树莓派前的设置" class="headerlink" title="开启树莓派前的设置"></a>开启树莓派前的设置</h1><h2 id="烧写树莓派系统"><a href="#烧写树莓派系统" class="headerlink" title="烧写树莓派系统"></a>烧写树莓派系统</h2><p>准备材料</p><ul><li>TF卡（大于8G，越大越好啦）&amp;TF卡的读卡器</li><li>win32diskimager.exe  – windows平台下的镜像烧写软件</li><li>系统镜像 (在这  <a href="http://shumeipai.nxez.com/download#os" target="_blank" rel="noopener">http://shumeipai.nxez.com/download#os</a> 选择一个进行下载，我下载的是 Raspbian 默认帐号：Username: pi Password: raspberry )<br>接下来打开软件win32diskimager.exe：<br>系统文件选择    系统镜像（要求路径无中文）<br>磁盘选择        TF卡<br>等待烧写完成。</li></ul><h2 id="无屏幕和键盘配置树莓派WiFi和SSH"><a href="#无屏幕和键盘配置树莓派WiFi和SSH" class="headerlink" title="无屏幕和键盘配置树莓派WiFi和SSH"></a><a href="http://shumeipai.nxez.com/2017/09/13/raspberry-pi-network-configuration-before-boot.html" target="_blank" rel="noopener">无屏幕和键盘配置树莓派WiFi和SSH</a></h2><blockquote><p>根据如上文章，可以在无屏幕的情况下开启ssh并且连接到树莓派的终端。</p></blockquote><p><strong>精华部分：</strong><br>在TF卡根目录下建立 wpa_supplicant.conf 文件 和ssh文件（新建一个文本文件然后更名为ssh，删除后缀，文件内容为空）。</p><p>wpa_supplicant.conf文件内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">country=CN</span><br><span class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</span><br><span class="line">update_config=1</span><br><span class="line"> </span><br><span class="line">network=&#123;</span><br><span class="line">ssid=&quot;WiFi-A&quot;      #wifi名字</span><br><span class="line">psk=&quot;12345678&quot;     #wifi密码</span><br><span class="line">key_mgmt=WPA-PSK   #加密协议</span><br><span class="line">priority=1         #wifi优先级，数字越小越先连接</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="进行ssh连接"><a href="#进行ssh连接" class="headerlink" title="进行ssh连接"></a><strong>进行ssh连接</strong></h3><p>配置好wifi和ssh之后，TF卡插到树莓派，然后上电，进行ssh连接</p><ul><li><p><strong>提示</strong></p><blockquote><p>插入电源，红灯亮，绿灯闪烁为正常状态。<br>其中红灯为电源指示灯，常亮即表示正常供电，绿灯为数据灯，闪烁则为有数据读取。</p></blockquote></li><li><p>Raspbian的ssh默认登陆用户名：pi，密码：raspberry。</p></li></ul><p>windows10好像是自带ssh连接的，命令为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh pi@ip地址</span><br><span class="line">#然后输入密码</span><br></pre></td></tr></table></figure></p><p>或者使用putty进行ssh连接</p><p><a href="http://shumeipai.nxez.com/2013/09/07/using-putty-to-log-in-to-the-raspberry-pie.html" target="_blank" rel="noopener">点击打开PuTTY使用方法</a></p><hr><h1 id="进阶设置"><a href="#进阶设置" class="headerlink" title="进阶设置"></a>进阶设置</h1><h2 id="修改默认的-Pi-账号"><a href="#修改默认的-Pi-账号" class="headerlink" title="修改默认的 Pi 账号"></a><a href="http://shumeipai.nxez.com/2013/08/27/pi-modify-the-default-account.html" target="_blank" rel="noopener">修改默认的 Pi 账号</a></h2><blockquote><p>树莓派默认的登录帐号是Pi，为了安全和使用习惯的统一，修改这个默认的 Pi 账号步骤如下：<br>首先，需要启用 root 账号。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd **  # 输入新密码</span><br></pre></td></tr></table></figure><h2 id="配置树莓派显示器"><a href="#配置树莓派显示器" class="headerlink" title="配置树莓派显示器"></a>配置树莓派显示器</h2><blockquote><p>用HDMI转VGA方式连接显示器—当直接用HDMI连接显示屏不能正常显示的时候可以做以下操作</p></blockquote><p>方法：修改SD卡的boot分区的config.txt 文件</p><p>首先备份config.txt文件，然后使用编辑器打开，这里不推荐记事本，可以使用 VIM 或者 notepad++ 打开。然后加入以下几个选项：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hdmi_force_hotplug=1</span><br><span class="line">config_hdmi_boost=4</span><br><span class="line">hdmi_group=2</span><br><span class="line">hdmi_mode=47</span><br><span class="line">hdmi_drive=2</span><br><span class="line">hdmi_ignore_edid=0xa5000080</span><br><span class="line">disable_overscan=1      </span><br></pre></td></tr></table></figure><p>这里我的显示器分辨率是1440x900，所以修改为hdmi_mode=37，如果你的显示器分辨率不同，请查找需要修改的值。</p><ul><li>转载自 <a href="http://blog.lxx1.com/" target="_blank" rel="noopener">科技爱好者博客</a></li><li>原文链接地址: <a href="http://blog.lxx1.com/1706" target="_blank" rel="noopener">解决树莓派使用HDMI-VGA转换器黑屏的方案</a></li></ul><h2 id="修改SWAP空间大小"><a href="#修改SWAP空间大小" class="headerlink" title="修改SWAP空间大小"></a>修改SWAP空间大小</h2><p>修改 /etc/dphys-swapfile文件的CONF_SWAPSIZE值<br>重启  sudo reboot<br>–参考自 <a href="http://shumeipai.nxez.com/2013/08/25/config-swap-size.html" target="_blank" rel="noopener">http://shumeipai.nxez.com/2013/08/25/config-swap-size.html</a> 的评论</p><h2 id="修改更新源–加快软件更新速度"><a href="#修改更新源–加快软件更新速度" class="headerlink" title="修改更新源–加快软件更新速度"></a>修改更新源–加快软件更新速度</h2><p><strong>需要修改的文件是：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/apt/sources.list</span><br><span class="line">/etc/apt/sources.d/raspi.list</span><br></pre></td></tr></table></figure></p><p><strong>中国镜像源地址：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#中国科学技术大学</span><br><span class="line">Raspbian http://mirrors.ustc.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#阿里云</span><br><span class="line">Raspbian http://mirrors.aliyun.com/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#清华大学</span><br><span class="line">Raspbian http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#华中科技大学</span><br><span class="line">Raspbian http://mirrors.hustunique.com/raspbian/raspbian/</span><br><span class="line">Arch Linux ARM http://mirrors.hustunique.com/archlinuxarm/</span><br><span class="line"></span><br><span class="line">#华南农业大学（华南用户）</span><br><span class="line">Raspbian http://mirrors.scau.edu.cn/raspbian/</span><br><span class="line"></span><br><span class="line">#大连东软信息学院源（北方用户）</span><br><span class="line">Raspbian http://mirrors.neusoft.edu.cn/raspbian/raspbian/</span><br><span class="line"></span><br><span class="line">#重庆大学源（中西部用户）</span><br><span class="line">Raspbian http://mirrors.cqu.edu.cn/Raspbian/raspbian/</span><br></pre></td></tr></table></figure></p><p><strong>修改之前建议先备份一下原来的文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp 原来的文件  原来的文件_backup</span><br></pre></td></tr></table></figure></p><h2 id="调节音量"><a href="#调节音量" class="headerlink" title="调节音量"></a>调节音量</h2><p>命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alsamixer</span><br></pre></td></tr></table></figure></p><p>输入命令后跳转到图形界面，按上下键控制音量,按ctrl+c退出控制界面。</p><h2 id="树莓派的系统设置界面"><a href="#树莓派的系统设置界面" class="headerlink" title="树莓派的系统设置界面"></a>树莓派的系统设置界面</h2><p>输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure></p><p>选择 Interfacing Options<br>可以设置以下开关状态</p><blockquote><p>camera<br>ssh<br>VNC  #开启VNC之后可以使用VNC显示树莓派图形界面<br>SPI<br>Serial<br>l-write<br>remote GPIO</p></blockquote><hr><h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h2 id="在树莓派上搭建代码托管服务-SVN"><a href="#在树莓派上搭建代码托管服务-SVN" class="headerlink" title="在树莓派上搭建代码托管服务(SVN)"></a><a href="http://shumeipai.nxez.com/2013/08/27/building-svn-come-in-raspberry.html" target="_blank" rel="noopener">在树莓派上搭建代码托管服务(SVN)</a></h2><h2 id="基于-Samba-实现-NAS-系统"><a href="#基于-Samba-实现-NAS-系统" class="headerlink" title="基于 Samba 实现 NAS 系统"></a><a href="http://shumeipai.nxez.com/2013/08/24/install-nas-on-raspberrypi.html" target="_blank" rel="noopener">基于 Samba 实现 NAS 系统</a></h2><p>安装好samba软件就可以在windows 打开我的电脑，右键添加网络位置<br>填入树莓派的ip地址信息，例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\\192.168.1.111\share</span><br></pre></td></tr></table></figure></p><p>就可以在windows访问树莓派的文件啦</p><hr><h1 id="更多有趣网站"><a href="#更多有趣网站" class="headerlink" title="更多有趣网站"></a><strong>更多有趣网站</strong></h1><blockquote><p><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a><br><a href="http://wiki.nxez.com/" target="_blank" rel="noopener">创客百科</a></p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -83,19 +83,19 @@
     
     </summary>
     
-      <category term="raspberry" scheme="http://yoursite.com/categories/raspberry/"/>
+      <category term="raspberry" scheme="https://dysonnnn.github.io/categories/raspberry/"/>
     
     
-      <category term="raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
+      <category term="raspberry" scheme="https://dysonnnn.github.io/tags/raspberry/"/>
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://dysonnnn.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hexo文章写作标签技巧</title>
-    <link href="http://yoursite.com/2018/05/23/Hexo_Tutorial/"/>
-    <id>http://yoursite.com/2018/05/23/Hexo_Tutorial/</id>
+    <link href="https://dysonnnn.github.io/2018/05/23/Hexo_Tutorial/"/>
+    <id>https://dysonnnn.github.io/2018/05/23/Hexo_Tutorial/</id>
     <published>2018-05-22T16:46:50.000Z</published>
     <updated>2018-10-14T03:34:04.370Z</updated>
     
@@ -110,21 +110,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/categories/Hexo/"/>
     
     
-      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="技巧" scheme="https://dysonnnn.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="标签" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE/"/>
+      <category term="标签" scheme="https://dysonnnn.github.io/tags/%E6%A0%87%E7%AD%BE/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>美化我的Hexo</title>
-    <link href="http://yoursite.com/2018/05/22/beautify_my_Hexo/"/>
-    <id>http://yoursite.com/2018/05/22/beautify_my_Hexo/</id>
+    <link href="https://dysonnnn.github.io/2018/05/22/beautify_my_Hexo/"/>
+    <id>https://dysonnnn.github.io/2018/05/22/beautify_my_Hexo/</id>
     <published>2018-05-22T08:24:31.000Z</published>
     <updated>2018-10-18T13:51:40.848Z</updated>
     
@@ -143,23 +143,23 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/categories/Hexo/"/>
     
     
-      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="技巧" scheme="https://dysonnnn.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/tags/Hexo/"/>
     
-      <category term="美化" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%8C%96/"/>
+      <category term="美化" scheme="https://dysonnnn.github.io/tags/%E7%BE%8E%E5%8C%96/"/>
     
-      <category term="nexT主题" scheme="http://yoursite.com/tags/nexT%E4%B8%BB%E9%A2%98/"/>
+      <category term="nexT主题" scheme="https://dysonnnn.github.io/tags/nexT%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>终于可以发布新的文章了</title>
-    <link href="http://yoursite.com/2018/05/22/start_to_post_new_article/"/>
-    <id>http://yoursite.com/2018/05/22/start_to_post_new_article/</id>
+    <link href="https://dysonnnn.github.io/2018/05/22/start_to_post_new_article/"/>
+    <id>https://dysonnnn.github.io/2018/05/22/start_to_post_new_article/</id>
     <published>2018-05-22T08:00:01.000Z</published>
     <updated>2018-11-12T08:30:29.669Z</updated>
     
@@ -171,19 +171,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://dysonnnn.github.io/tags/Hexo/"/>
     
-      <category term="搭建记录" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+      <category term="搭建记录" scheme="https://dysonnnn.github.io/tags/%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/05/21/hello-world/"/>
-    <id>http://yoursite.com/2018/05/21/hello-world/</id>
+    <link href="https://dysonnnn.github.io/2018/05/21/hello-world/"/>
+    <id>https://dysonnnn.github.io/2018/05/21/hello-world/</id>
     <published>2018-05-21T09:03:53.543Z</published>
     <updated>2018-10-16T11:02:39.229Z</updated>
     
